@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Thông tin người dùng đăng nhập hệ thống",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase UID" },
+        "email": { "type": "string", "format": "email", "description": "Địa chỉ email" },
+        "displayName": { "type": "string", "description": "Tên hiển thị" },
+        "photoURL": { "type": "string", "description": "Ảnh đại diện" },
+        "lastLogin": { "type": "string", "format": "date-time", "description": "Thời gian đăng nhập cuối" }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Dữ liệu người dùng"
+    }
+  }
+}
