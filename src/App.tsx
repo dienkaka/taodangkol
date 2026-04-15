@@ -125,7 +125,7 @@ export default function App() {
                 <span className="text-primary">Chuyên nghiệp</span>
               </motion.h1>
               <p className="text-white/60 text-lg leading-relaxed">
-                Tải lên một bức ảnh duy nhất và để AI tạo ra 9 góc độ pose thời trang đẳng cấp cho người mẫu của bạn.
+                Tải lên một bức ảnh duy nhất và để AI tạo ra 6 góc độ pose thời trang đẳng cấp cho người mẫu của bạn.
               </p>
             </div>
 
@@ -168,7 +168,7 @@ export default function App() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <LayoutGrid className="h-5 w-5 text-primary" />
-                <h2 className="text-xl font-bold uppercase tracking-tight">9 Khung hình Pose</h2>
+                <h2 className="text-xl font-bold uppercase tracking-tight">6 Khung hình Pose</h2>
               </div>
               <div className="flex items-center gap-4">
                 {variations.some(v => v.status === 'success') && (
@@ -184,7 +184,7 @@ export default function App() {
                   </Button>
                 )}
                 <div className="text-xs font-mono text-white/40">
-                  {variations.filter(v => v.status === 'success').length} / 9 HOÀN TẤT
+                  {variations.filter(v => v.status === 'success').length} / 6 HOÀN TẤT
                 </div>
               </div>
             </div>

@@ -16,10 +16,7 @@ export const POSE_LABELS = [
   "Góc nhìn từ trên xuống",
   "Tạo dáng ngồi thời thượng",
   "Góc nhìn từ dưới lên (quyền lực)",
-  "Tạo dáng chuyển động (walking)",
-  "Cận cảnh khuôn mặt (beauty shot)",
-  "Tạo dáng khoe lưng",
-  "Góc 3/4 nghệ thuật"
+  "Tạo dáng chuyển động (walking)"
 ];
 
 export async function generatePoseVariation(
